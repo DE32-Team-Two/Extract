@@ -95,7 +95,7 @@ def save2df(load_dt='20120101', url_params={}, df=None):
 
     print(f"partitioning List : {partitions}")
 
-    df.to_parquet('~/tmp/test_parquet', partition_cols=partitions)
+    df.to_parquet('~/t2/test_parquet', partition_cols=partitions)
 
     return df
 
