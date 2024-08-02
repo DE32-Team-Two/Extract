@@ -44,5 +44,5 @@ def save2df(load_dt='20120101', url_param = {}):
     df = list2df(url_param=url_param, load_dt=load_dt)
     df['load_dt'] = load_dt
 
-    df.to_parquet('~/tmp/test_parquet', partition_cols=['load_dt'])
+    df.to_parquet('~/t2/test_parquet', partition_cols=['load_dt'])
     return df
