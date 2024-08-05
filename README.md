@@ -11,6 +11,11 @@
 	- url 테스트 ✅
 	- Dataframe cols 테스트 ✅
 
+- v2.0.0
+    - parqeut 파일 생성 테스트 ✅
+    - year, month, date 형식으로 partitioning ✅
+    - 멱등성 유지 기능 테스트 ✅
+
 # Member
 - [정미은](https://github.com/orgs/DE32-Team-Two/people/hahahellooo)
 - [김태영](https://github.com/orgs/DE32-Team-Two/people/tbongkim03)
