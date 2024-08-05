@@ -1,9 +1,11 @@
 [project]
 name = "Extract"
-version = "0.1.0"
+version = "2.0.0"
 description = "Default template for PDM package"
 authors = [
     {name = "Jeonghoon2", email = "ukidd12@naver.com"},
+    {name = "tbongkim03", email = "tbongkim03@gmail.com"},
+    {name = "hahahellooo", email = "hahahello777@gmail.com"},
 ]
 dependencies = [
     "requests>=2.32.3",
@@ -11,7 +13,7 @@ dependencies = [
     "fastparquet>=2024.5.0",
     "pyarrow>=17.0.0",
 ]
-requires-python = "==3.11.*"
+requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
 
