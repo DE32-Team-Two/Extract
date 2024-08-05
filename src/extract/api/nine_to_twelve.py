@@ -79,12 +79,10 @@ def ice_breaking():
 
 
 def save2df(load_dt='20220101'):
+    
     PARQUET_PATH='~/t2/test_parquet'
-    # 외부에서 입력 받는 DF가 없다면 날짜와 URL Param으로 데이터를 추출
-    #if df is None:
-    #    df = list2df(load_dt, url_params)
-    df = req(load_dt)
 
+    df = req(load_dt)
     df['year'] = str(load_dt[0:4])
     df['month'] = str(load_dt[4:6])
     df['date'] = str(load_dt[6:9])
