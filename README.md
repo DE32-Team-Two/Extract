@@ -19,28 +19,15 @@ README
 아스키아트로 변환된 팀원 사진이 호출
 ***
 
-#### 기본설정
-```
-# python version 3.11.9로 맞추기
-$ pyenv global 3.11.9
-# 팀플을 위한 가상환경 만들기
-$ pyenv virtualenv 3.11.9 t2
-# 프롬프트에서 사용하기 위한 설정
-$ pyenv shell t2
-# pdm 설치
-$ cd code/t2/Extract
-$ git init
-$ pdm init
-```
-#### 패키지 설치
-```pdm add <dependencies>
-```
-[dependencies]
-pytest
-pytest -cov
-figlet
-requets
-pandas
+#### 브랜치 전략
+
+- main - release/d1.0.0 - dev/d1.0.0 - d1.0.0/<기능이름>
+- mian - release/d2.0.0 - dev/d2.0.0 - d2.0.0/<기능이름>
+
+- 개발 단계
+    1. d2.0.0/1to4, d2.0.0/5to8, d2.0.0/9t12로 dev/d2.0.0에 각각 하위 브랜치 생성
+    2. 기능개발, 파이테스트 통과 후 문제없으면 dev/d2.0.0으로 PR 후 머지
+    3. 합친 후에 테스트 진행, 에러 없으면 release/d2.0.0으로 머지
 
 # Extract
 
