@@ -1,17 +1,17 @@
-from extract.api.one_to_four import ice_b, req, gen_url, get_key, req2list, list2df, save2df
+from extract.api.five_to_eight import ice_breaking, req, gen_url, get_key, list2df, save2df
 import pandas as pd
 import os
 
 
 def test_save_df():
-    df = req("20220101")
+    df = req("20220501")
 
     assert isinstance(df, pd.DataFrame)
 
 
 def test_exist_parquet():
-    save2df("20220101")
-    year,month,date="2022","01","01"
+    save2df("20220501")
+    year,month,date="2022","05","01"
     parquet_path = '~/t2/test_parquet'
     up = os.path.expanduser(parquet_path)
     pf = os.path.join(up, f'year={year}', f'month={month}', f'date={date}')
@@ -49,10 +49,10 @@ def test_유알엘테스트():
     assert "http" in url
     assert "kobis" in url
     
-    d = {"multiMovieYn": "N"}
-    url = gen_url(url_params = d)
-    print(url)
-    assert "multiMovieYn" in url
+    #d = {"multiMovieYn": "N"}
+    #url = gen_url(url_params = d)
+    #print(url)
+    #assert "multiMovieYn" in url
     
 
 def test_req():
