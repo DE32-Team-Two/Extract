@@ -1,3 +1,4 @@
+
 # Extract
 
 ![LGTM](https://i.lgtm.fun/2t8f.png)
@@ -14,3 +15,4 @@
 - [정미은](https://github.com/orgs/DE32-Team-Two/people/hahahellooo)
 - [김태영](https://github.com/orgs/DE32-Team-Two/people/tbongkim03)
 - [이정훈](https://github.com/orgs/DE32-Team-Two/people/Jeonghoon2)
+- 
