@@ -43,13 +43,13 @@ def save2df(load_dt='20220501'):
 
     df['year'] = str(load_dt[0:4])
     df['month'] = str(load_dt[4:6])
-    df['date'] = str(load_dt[6:9])
+    df['date'] = str(load_dt[6:8])
 
     partitions = [
     'year', 'month', 'date'
             ]
 
-    exist_parquet(PARQUET_PATH, str(load_dt[0:4]), str(load_dt[4:6]), str(load_dt[6:9]))
+    exist_parquet(PARQUET_PATH, str(load_dt[0:4]), str(load_dt[4:6]), str(load_dt[6:8]))
 
     df.to_parquet(PARQUET_PATH, partition_cols=partitions)
 

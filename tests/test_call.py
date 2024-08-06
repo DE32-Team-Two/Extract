@@ -1,17 +1,17 @@
-from extract.api.five_to_eight import ice_breaking, req, gen_url, get_key, list2df, save2df
+from extract.api.nine_to_twelve import ice_breaking, req, gen_url, get_key, list2df, save2df
 import pandas as pd
 import os
 
 
 def test_save_df():
-    df = req("20220501")
+    df = req("20220901")
 
     assert isinstance(df, pd.DataFrame)
 
 
 def test_exist_parquet():
-    save2df("20220501")
-    year,month,date="2022","05","01"
+    save2df("20220901")
+    year,month,date="2022","09","01"
     parquet_path = '~/t2/test_parquet'
     up = os.path.expanduser(parquet_path)
     pf = os.path.join(up, f'year={year}', f'month={month}', f'date={date}')
